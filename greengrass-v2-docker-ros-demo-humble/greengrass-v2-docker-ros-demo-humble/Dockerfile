@@ -22,7 +22,7 @@ LABEL build_step="DemoNodesROSPackage_Build"
 # Clone the demos_ros_cpp package from within the ROS Demos monorepo.
 RUN mkdir -p /ws/src
 WORKDIR /ws
-RUN git clone https://github.com/ros2/demos.git \
+RUN git clone https://github.com/MyNameAhmod/demos.git \
     -b $ROS_DISTRO ../tmp && \
     cp -r ../tmp/demo_nodes_py src/demos
     
