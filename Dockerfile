@@ -12,7 +12,7 @@ LABEL build_step="ROSDemoNodes_Build"
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
 RUN apt-get update && apt-get install python3-pip -y
 RUN apt-get update && apt-get install ros-$ROS_DISTRO-example-interfaces
-RUN python3 -m pip install awsiotsdk
+RUN python3 -m pip install awsiotsdk num2words word2number
 
 # ==== Package 1: ROS Demos Talker/Listener ==== 
 FROM build-base AS ros-demos-package
